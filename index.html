@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="pl"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Wolt Merchant Onboarding - AI Auditor 2026&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.jsdelivr.net/npm/chart.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&amp;display=swap');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--wolt-blue: #009DE0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--wolt-cyan: #00C2E8;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--wolt-navy: #1A2B49;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--wolt-light-bg: #F2F5F7;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Inter', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--wolt-light-bg);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--wolt-navy);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>-webkit-font-smoothing: antialiased;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.wolt-card {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 10px 30px rgba(26, 43, 73, 0.05);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid rgba(0, 0, 0, 0.03);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.3s ease, box-shadow 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.wolt-card:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-4px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 15px 40px rgba(26, 43, 73, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.wolt-btn-main {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--wolt-blue);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 900;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>letter-spacing: 0.05em;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.2s ease;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 14px rgba(0, 157, 224, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.wolt-btn-main:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>filter: brightness(1.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-2px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 6px 20px rgba(0, 157, 224, 0.4);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.ai-pulse { animation: pulse-animation 2s infinite; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes pulse-animation {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>0% { opacity: 1; transform: scale(1); }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>50% { opacity: 0.5; transform: scale(1.05); }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>100% { opacity: 1; transform: scale(1); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.loading-overlay {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: fixed;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 0; left: 0; width: 100%; height: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(26, 43, 73, 0.95);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>z-index: 9999;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>#finalReportArea {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>white-space: pre-wrap;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-left: 4px solid var(--wolt-blue);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Courier New', Courier, monospace;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.chart-container { position: relative; width: 100%; height: 300px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="pb-20"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="loader" class="loading-overlay"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="text-7xl mb-6 ai-pulse"&gt;✨&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-4xl font-black uppercase tracking-tighter"&gt;AI bada rynek...&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="text-blue-300 mt-4 text-xl font-bold"&gt;Analiza logistyki i asortymentu w toku&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header class="bg-wolt-navy py-16 px-6 shadow-2xl relative overflow-hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-5xl mx-auto text-center relative z-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1 class="text-5xl font-black text-white mb-4 uppercase tracking-tighter"&gt;Wolt Merchant Audit ✨&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-blue-200 mb-8 font-bold uppercase tracking-widest text-sm"&gt;Onboarding Automation Tool v2.5&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex flex-col md:flex-row gap-4 bg-white p-4 rounded-3xl shadow-inner max-w-4xl mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;input id="merchantUrl" type="text" placeholder="Wklej link do Google Maps lub Pyszne.pl..."<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                       </span>class="flex-1 px-8 py-5 rounded-2xl border-none outline-none text-wolt-navy font-bold text-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="triggerFullAnalysis()" class="wolt-btn-main px-12 py-5 rounded-2xl whitespace-nowrap text-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>GENERUJ RAPORT</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;main class="max-w-7xl mx-auto px-6 py-12 space-y-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid grid-cols-1 lg:grid-cols-12 gap-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="lg:col-span-8 wolt-card p-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-2xl font-black text-wolt-navy uppercase mb-8"&gt;Weryfikacja Tożsamości&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="grid grid-cols-1 md:grid-cols-2 gap-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="space-y-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="p-5 bg-gray-50 rounded-2xl border-l-4 border-wolt-blue"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-[10px] font-black text-gray-400 uppercase"&gt;Nazwa Lokalu&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p id="v_name" class="text-xl font-black mt-1"&gt;---&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="p-5 bg-gray-50 rounded-2xl border-l-4 border-wolt-blue"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-[10px] font-black text-gray-400 uppercase"&gt;Adres Operacyjny&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p id="v_address" class="text-md font-bold mt-1"&gt;---&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-blue-50/50 rounded-3xl p-8 border border-blue-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="text-[10px] font-black text-wolt-blue uppercase"&gt;Copywriting AI&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h4 id="v_slogan" class="text-xl font-black text-wolt-navy mt-4 italic"&gt;"Gotowy na audyt?"&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p id="v_desc" class="text-sm text-gray-500 mt-2 leading-relaxed"&gt;Opis marketingowy pojawi się po analizie linku.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="lg:col-span-4 wolt-card p-10 border-t-[12px] border-wolt-navy flex flex-col justify-between"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-black mb-6 uppercase"&gt;Logistyka&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="space-y-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-gray-400 text-[11px] font-black uppercase"&gt;Min. Koszyk (MOV)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p id="v_min_basket" class="text-5xl font-black text-black mt-1"&gt;-- &lt;small class="text-lg opacity-30"&gt;PLN&lt;/small&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-gray-400 text-[11px] font-black uppercase"&gt;Dostawa Własna&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p id="v_own_delivery" class="text-xl font-black text-wolt-blue"&gt;---&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid grid-cols-1 md:grid-cols-2 gap-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="wolt-card p-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 class="text-2xl font-black mb-6 uppercase text-wolt-navy"&gt;Godziny Otwarcia&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="rounded-2xl overflow-hidden border border-gray-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;table class="w-full text-left"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;tbody id="v_hours_table" class="divide-y divide-gray-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="wolt-card p-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 class="text-2xl font-black mb-6 uppercase text-wolt-navy"&gt;Struktura Menu&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="chart-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;canvas id="menuChart"&gt;&lt;/canvas&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="wolt-card p-12 bg-gray-900 text-white shadow-3xl"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-3xl font-black mb-8 text-wolt-blue uppercase tracking-tighter"&gt;System Note: Onboarding Report ✨&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="finalReportArea" class="text-blue-100/80 text-sm leading-relaxed bg-white/5 p-8 rounded-2xl border border-white/10 italic"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Czekam na dane wejściowe...</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mt-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="generateAuditReport()" class="wolt-btn-main px-10 py-4 rounded-xl"&gt;GENERUJ NOTATKĘ SYSTEMOWĄ&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const apiKey = "TWÓJ_KLUCZ_API"; // Wklej swój klucz tutaj</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const model = "gemini-2.0-flash";</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let menuChart;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const systemInstruction = "Jesteś Specjalistą Onboardingu w Wolt. Twoim zadaniem jest analiza linków restauracji i przygotowanie danych do systemu. Twój styl jest profesjonalny, nowoczesny i zorientowany na sprzedaż (foodie-friendly).";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Konfiguracja Schematu JSON</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const responseSchema = {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>type: "object",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>properties: {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>name: { type: "string" },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>address: { type: "string" },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>slogan: { type: "string" },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>description: { type: "string" },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>min_basket: { type: "number" },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>own_delivery: { type: "string", enum: ["TAK", "NIE", "NIEZNANY"] },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>hours: {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>type: "object",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>properties: {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Pn: { type: "string" }, Wt: { type: "string" }, Sr: { type: "string" },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Cz: { type: "string" }, Pt: { type: "string" }, So: { type: "string" }, Nd: { type: "string" }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                </span>menu_stats: { type: "array", items: { type: "number" } }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>required: ["name", "address", "hours", "menu_stats"]</p>
+<p class="p1"><span class="Apple-converted-space">        </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>async function fetchAI(prompt, useSchema = true) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const payload = {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>contents: [{ parts: [{ text: prompt }] }],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>system_instruction: { parts: [{ text: systemInstruction }] },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>tools: [{ "google_search": {} }],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>generationConfig: {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>temperature: 0.7,</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>...(useSchema &amp;&amp; {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>response_mime_type: "application/json",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>response_schema: responseSchema</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>})</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>try {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const response = await fetch(url, {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>method: 'POST',</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>headers: { 'Content-Type': 'application/json' },</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>body: JSON.stringify(payload)</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const data = await response.json();</p>
+<p class="p1"><span class="Apple-converted-space">                </span>return data.candidates[0].content.parts[0].text;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} catch (e) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>console.error("Błąd API:", e);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>return null;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>async function triggerFullAnalysis() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const url = document.getElementById('merchantUrl').value;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (!url) return alert("Podaj URL!");</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('loader').style.display = 'flex';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const prompt = `Analizuj link: ${url}. Wyciągnij dane lokalu. Slogan i opis napisz po polsku w stylu Wolt. Menu stats: [Dania główne, Dodatki, Napoje, Desery].`;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const result = await fetchAI(prompt, true);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (result) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const data = JSON.parse(result);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>updateUI(data);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('loader').style.display = 'none';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function updateUI(data) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('v_name').innerText = data.name;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('v_address').innerText = data.address;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('v_slogan').innerText = `"${data.slogan || 'Świeżo i lokalnie'}"`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('v_desc').innerText = data.description || 'Brak opisu.';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('v_min_basket').innerHTML = `${data.min_basket || '--'} &lt;small class="text-lg opacity-30"&gt;PLN&lt;/small&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('v_own_delivery').innerText = data.own_delivery;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const days = { Pn: "Poniedziałek", Wt: "Wtorek", Sr: "Środa", Cz: "Czwartek", Pt: "Piątek", So: "Sobota", Nd: "Niedziela" };</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const tableBody = document.getElementById('v_hours_table');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>tableBody.innerHTML = '';</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>Object.keys(days).forEach(key =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>tableBody.innerHTML += `</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;tr class="table-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;td class="px-6 py-4 font-bold text-sm"&gt;${days[key]}&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;td class="px-6 py-4 font-black text-wolt-blue text-right"&gt;${data.hours[key] || '---'}&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>updateChart(data.menu_stats || [10, 5, 5, 2]);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function updateChart(stats) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (menuChart) menuChart.destroy();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const ctx = document.getElementById('menuChart').getContext('2d');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>menuChart = new Chart(ctx, {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>type: 'doughnut',</p>
+<p class="p1"><span class="Apple-converted-space">                </span>data: {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>labels: ['Główne', 'Dodatki', 'Napoje', 'Desery'],</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>datasets: [{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>data: stats,</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>backgroundColor: ['#009DE0', '#00C2E8', '#1A2B49', '#E5E7EB'],</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>borderWidth: 5</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}]</p>
+<p class="p1"><span class="Apple-converted-space">                </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: { maintainAspectRatio: false, cutout: '75%' }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>async function generateAuditReport() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const area = document.getElementById('finalReportArea');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const name = document.getElementById('v_name').innerText;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (name === "---") return alert("Najpierw wykonaj analizę!");</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>area.innerText = "⏳ Generowanie oficjalnego werdyktu...";</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const prompt = `Napisz notatkę systemową Wolt (Internal Memo) dla restauracji ${name}.<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>Struktura: [POTENCJAŁ RYNKOWY (1-10)], [ANALIZA OPERACYJNA], [REKOMENDACJE], [WERDYKT].<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>Styl: Profesjonalny raport operacyjny.`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const res = await fetchAI(prompt, false);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>area.innerText = res;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>window.onload = () =&gt; updateChart([0, 0, 0, 0]);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
